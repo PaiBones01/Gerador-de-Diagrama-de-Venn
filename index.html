@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Diagrama de Veen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="editor">
+    <h2>Configurações</h2>
+    <label>Título:</label>
+    <input type="text" id="titulo" placeholder="Título do diagrama"><br><br>
+
+    <label>Conjunto A:</label>
+    <input type="text" id="setA" placeholder="Ex: 0,1,3,4,5"><br><br>
+
+    <label>Conjunto B:</label>
+    <input type="text" id="setB" placeholder="Ex: 0,1,8,9"><br><br>
+
+    <label>Conjunto C:</label>
+    <input type="text" id="setC" placeholder="Opcional"><br><br>
+
+    <button onclick="gerarDiagrama()">Gerar Diagrama</button>
+    <button onclick="baixarImagem()">Baixar Imagem</button>
+  </div>
+
+  <div id="canvas-container">
+    <canvas id="vennCanvas" width="600" height="500"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

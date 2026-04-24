@@ -1,0 +1,79 @@
+/* Layout geral */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #f9f9f9, #e6e6e6);
+}
+
+/* Painel lateral */
+#editor {
+  width: 280px;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  border-right: 1px solid #ddd;
+}
+
+#editor h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+  border-bottom: 2px solid #0078d7;
+  padding-bottom: 8px;
+}
+
+#editor label {
+  font-weight: bold;
+  color: #444;
+}
+
+#editor input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s;
+}
+
+#editor input:focus {
+  border: 1px solid #0078d7;
+  outline: none;
+}
+
+/* Botões */
+#editor button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background: #0078d7;
+  color: #fff;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#editor button:hover {
+  background: #005fa3;
+  transform: scale(1.02);
+}
+
+/* Área do canvas */
+#canvas-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+}
+
+canvas {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
